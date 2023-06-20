@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/pago_general.dart';
 
@@ -115,14 +116,89 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ),
             ],
           ),
-          // Column(
-          //   children: [
-          //     ClipRRect(
-          //         borderRadius: BorderRadius.circular(30),
-          //         child: Image.asset('assets/imagenes/tarjeta.jpg',
-          //             fit: BoxFit.cover)),
-          //   ],
+          Padding(padding: EdgeInsets.all(5)),
+          Container(
+            decoration: const BoxDecoration(
+                color: Colors.white,
+                image: DecorationImage(
+                  image: AssetImage('assets/imagenes/tarjetapaypal.png'),
+                  fit: BoxFit.fill,
+                )),
+          ),
+          // SizedBox(
+          //   height: 120.0,
+          //   width: double.infinity,
+          //   child: CarouselSlider(
+          //     options: CarouselOptions(
+          //       aspectRatio: 97 / 350,
+          //       viewportFraction: 0.5,
+          //       initialPage: 0,
+          //       enableInfiniteScroll: true,
+          //       reverse: false,
+          //       autoPlay: true,
+          //       autoPlayInterval: Duration(seconds: 4),
+          //       autoPlayAnimationDuration: Duration(milliseconds: 1000),
+          //       autoPlayCurve: Curves.fastOutSlowIn,
+          //       enlargeCenterPage: true,
+          //       enlargeFactor: 0.7,
+          //       scrollDirection: Axis.horizontal,
+          //       enlargeStrategy: CenterPageEnlargeStrategy.zoom,
+          //     ),
+          //     items: [
+          //       Center(
+          //         child: Stack(
+          //           children: [
+          //             Container(
+          //               child: Center(
+          //                 child: Container(
+          //                   decoration: BoxDecoration(
+          //                       borderRadius: BorderRadius.circular(20),
+          //                       boxShadow: const [
+          //                         BoxShadow(
+          //                           blurRadius: 4,
+          //                           color: Color.fromARGB(255, 163, 162, 162),
+          //                         ),
+          //                       ]),
+          //                   child: ClipRRect(
+          //                       borderRadius: BorderRadius.circular(10),
+          //                       child: Image.asset(
+          //                           'assets/imagenes/tarjeta.png',
+          //                           fit: BoxFit.cover)),
+          //                 ),
+          //               ),
+          //             ),
+          //           ],
+          //         ),
+          //       ),
+          //       Center(
+          //         child: Stack(
+          //           children: [
+          //             Container(
+          //               child: Center(
+          //                 child: Container(
+          //                   decoration: BoxDecoration(
+          //                       borderRadius: BorderRadius.circular(20),
+          //                       boxShadow: const [
+          //                         BoxShadow(
+          //                           blurRadius: 4,
+          //                           color: Color.fromARGB(255, 163, 162, 162),
+          //                         ),
+          //                       ]),
+          //                   child: ClipRRect(
+          //                       borderRadius: BorderRadius.circular(10),
+          //                       child: Image.asset(
+          //                           'assets/imagenes/pv1paypal.png',
+          //                           fit: BoxFit.cover)),
+          //                 ),
+          //               ),
+          //             ),
+          //           ],
+          //         ),
+          //       ),
+          //     ],
+          //   ),
           // ),
+
           const Padding(padding: EdgeInsets.all(20)),
           const Row(
             children: [
