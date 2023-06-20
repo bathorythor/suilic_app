@@ -1,6 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:suilic_app/src/pages/Pre_reg_pag.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/pago_general.dart';
+
+import 'confiusuario.dart';
 
 class transpago extends StatelessWidget {
   const transpago({super.key});
@@ -116,89 +119,79 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.all(5)),
-          Container(
-            decoration: const BoxDecoration(
-                color: Colors.white,
-                image: DecorationImage(
-                  image: AssetImage('assets/imagenes/tarjetapaypal.png'),
-                  fit: BoxFit.fill,
-                )),
+          SizedBox(
+            height: 120.0,
+            width: double.infinity,
+            child: CarouselSlider(
+              options: CarouselOptions(
+                aspectRatio: 97 / 350,
+                viewportFraction: 0.5,
+                initialPage: 0,
+                enableInfiniteScroll: true,
+                reverse: false,
+                autoPlay: true,
+                autoPlayInterval: Duration(seconds: 4),
+                autoPlayAnimationDuration: Duration(milliseconds: 1000),
+                autoPlayCurve: Curves.fastOutSlowIn,
+                enlargeCenterPage: true,
+                enlargeFactor: 0.7,
+                scrollDirection: Axis.horizontal,
+                enlargeStrategy: CenterPageEnlargeStrategy.zoom,
+              ),
+              items: [
+                Center(
+                  child: Stack(
+                    children: [
+                      Container(
+                        child: Center(
+                          child: Container(
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    blurRadius: 4,
+                                    color: Color.fromARGB(255, 163, 162, 162),
+                                  ),
+                                ]),
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.asset(
+                                    'assets/imagenes/tarjeta.png',
+                                    fit: BoxFit.cover)),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Center(
+                  child: Stack(
+                    children: [
+                      Container(
+                        child: Center(
+                          child: Container(
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    blurRadius: 4,
+                                    color: Color.fromARGB(255, 163, 162, 162),
+                                  ),
+                                ]),
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.asset(
+                                    'assets/imagenes/pv1paypal.png',
+                                    fit: BoxFit.cover)),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-          // SizedBox(
-          //   height: 120.0,
-          //   width: double.infinity,
-          //   child: CarouselSlider(
-          //     options: CarouselOptions(
-          //       aspectRatio: 97 / 350,
-          //       viewportFraction: 0.5,
-          //       initialPage: 0,
-          //       enableInfiniteScroll: true,
-          //       reverse: false,
-          //       autoPlay: true,
-          //       autoPlayInterval: Duration(seconds: 4),
-          //       autoPlayAnimationDuration: Duration(milliseconds: 1000),
-          //       autoPlayCurve: Curves.fastOutSlowIn,
-          //       enlargeCenterPage: true,
-          //       enlargeFactor: 0.7,
-          //       scrollDirection: Axis.horizontal,
-          //       enlargeStrategy: CenterPageEnlargeStrategy.zoom,
-          //     ),
-          //     items: [
-          //       Center(
-          //         child: Stack(
-          //           children: [
-          //             Container(
-          //               child: Center(
-          //                 child: Container(
-          //                   decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(20),
-          //                       boxShadow: const [
-          //                         BoxShadow(
-          //                           blurRadius: 4,
-          //                           color: Color.fromARGB(255, 163, 162, 162),
-          //                         ),
-          //                       ]),
-          //                   child: ClipRRect(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       child: Image.asset(
-          //                           'assets/imagenes/tarjeta.png',
-          //                           fit: BoxFit.cover)),
-          //                 ),
-          //               ),
-          //             ),
-          //           ],
-          //         ),
-          //       ),
-          //       Center(
-          //         child: Stack(
-          //           children: [
-          //             Container(
-          //               child: Center(
-          //                 child: Container(
-          //                   decoration: BoxDecoration(
-          //                       borderRadius: BorderRadius.circular(20),
-          //                       boxShadow: const [
-          //                         BoxShadow(
-          //                           blurRadius: 4,
-          //                           color: Color.fromARGB(255, 163, 162, 162),
-          //                         ),
-          //                       ]),
-          //                   child: ClipRRect(
-          //                       borderRadius: BorderRadius.circular(10),
-          //                       child: Image.asset(
-          //                           'assets/imagenes/pv1paypal.png',
-          //                           fit: BoxFit.cover)),
-          //                 ),
-          //               ),
-          //             ),
-          //           ],
-          //         ),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-
           const Padding(padding: EdgeInsets.all(20)),
           const Row(
             children: [
@@ -249,28 +242,27 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               )
             ],
           ),
-
           const Padding(padding: EdgeInsets.all(110)),
-          // SizedBox(
-          //     width: 380,
-          //     height: 58,
-          //     child: ElevatedButton(
-          //         onPressed: () {
-          //           Navigator.push(
-          //               context,
-          //               MaterialPageRoute(
-          //                   builder: (context) => const PagoGeneral()));
-          //         },
-          //         child: const Text('Guardar y continuar'),
-          //         style: ElevatedButton.styleFrom(
-          //             textStyle: const TextStyle(
-          //               fontFamily: 'Roboto',
-          //               fontWeight: FontWeight.bold,
-          //               fontSize: 18,
-          //             ),
-          //             primary: Color(0xFF0080ff),
-          //             shape: RoundedRectangleBorder(
-          //                 borderRadius: BorderRadius.circular(15))))),
+          SizedBox(
+              width: 380,
+              height: 58,
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Confiusuario()));
+                  },
+                  child: const Text('Guardar y continuar'),
+                  style: ElevatedButton.styleFrom(
+                      textStyle: const TextStyle(
+                        fontFamily: 'Roboto',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                      primary: Color(0xFF0080ff),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15))))),
         ],
       ),
     );
