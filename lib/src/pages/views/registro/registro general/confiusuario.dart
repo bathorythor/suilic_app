@@ -496,15 +496,24 @@ class _Confiusuario extends State<Confiusuario> {
               alignment: Alignment.centerLeft,
               color: Color(0xFF0080ff),
               padding: EdgeInsets.all(15),
-              child: Container(
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  onTap: () {},
-                  child: Image.asset(
-                    'assets/imagenes/iconos/iconatras.png',
-                    color: Colors.white,
+              child: Row(
+                children: [
+                  Container(
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      onTap: () {},
+                      child: Image.asset(
+                        'assets/imagenes/iconos/iconatras.png',
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
-                ),
+                  const Padding(
+                      padding: EdgeInsets.symmetric(
+                    horizontal: 50,
+                  )),
+                  const Text('data'),
+                ],
               ),
             ),
           ),
