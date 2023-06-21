@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/Pre_reg_pag.dart';
+
 import 'package:suilic_app/src/pages/views/registro/registro%20general/transpago.dart';
 
 class TransaccionesGeneral extends StatelessWidget {
@@ -45,7 +45,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 200.0,
+          toolbarHeight: 150.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
@@ -67,7 +67,10 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 30.0,
+          vertical: 8.0,
+        ),
         children: [
           Column(
             children: [
@@ -126,7 +129,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             ],
           ),
           SizedBox(
-            height: 120.0,
+            height: 100.0,
             width: double.infinity,
             child: CarouselSlider(
               options: CarouselOptions(
@@ -136,8 +139,8 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                 enableInfiniteScroll: true,
                 reverse: false,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 4),
-                autoPlayAnimationDuration: Duration(milliseconds: 1000),
+                autoPlayInterval: Duration(seconds: 2),
+                autoPlayAnimationDuration: Duration(milliseconds: 300),
                 autoPlayCurve: Curves.fastOutSlowIn,
                 enlargeCenterPage: true,
                 enlargeFactor: 0.7,
@@ -198,7 +201,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ],
             ),
           ),
-          Padding(padding: EdgeInsets.all(20)),
+          Padding(padding: EdgeInsets.all(5)),
           Column(
             children: [
               const Padding(
@@ -306,7 +309,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.all(10)),
+          Padding(padding: EdgeInsets.all(2)),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -326,7 +329,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               const SizedBox(
                 height: 1,
               ),
-              Padding(padding: EdgeInsets.all(5)),
+              Padding(padding: EdgeInsets.all(2)),
               Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -348,7 +351,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                     setState(() => date = newDate);
                   },
                   child: const SizedBox(
-                    width: 380,
+                    width: 280,
                     height: 58,
                     child: Center(
                       child: Text(
@@ -364,7 +367,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.all(15)),
+          Padding(padding: EdgeInsets.all(2)),
           Container(
             child: const Text(
               'Número de pin',
@@ -374,7 +377,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          Padding(padding: EdgeInsets.all(5)),
+          Padding(padding: EdgeInsets.all(2)),
           Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
@@ -413,7 +416,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ),
             ),
           ),
-          const Padding(padding: EdgeInsets.all(5)),
+          const Padding(padding: EdgeInsets.all(2)),
           Container(
             child: const Text(
               'Domicilio',
@@ -492,8 +495,8 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               )),
               const Padding(
                   padding: EdgeInsets.symmetric(
-                horizontal: 18,
-                vertical: 20,
+                horizontal: 15,
+                vertical: 2,
               )),
               Container(
                   decoration: BoxDecoration(
@@ -507,9 +510,9 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           offset: Offset(0, 2),
                         ),
                       ]),
-                  //width: MediaQuery.of(context).size.width * 0.7,
+                  //width: MediaQuery.of(context).size.width * 0.6,
                   child: SizedBox(
-                    width: 258,
+                    width: 241,
                     height: 58,
                     child: TextField(
                       decoration: InputDecoration(

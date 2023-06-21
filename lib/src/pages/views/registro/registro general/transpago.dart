@@ -1,7 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/Pre_reg_pag.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20general/pago_general.dart';
 
 import 'confiusuario.dart';
 
@@ -64,57 +62,63 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(20),
-        children: <Widget>[
-          const ListTile(
-              title: Center(
-            child: Text('Pay with',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25,
-                  fontFamily: 'Roboto',
-                )),
-          )),
-          Row(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 30.0,
+          vertical: 5.0,
+        ),
+        children: [
+          Column(
             children: [
-              Expanded(
-                child: RadioListTile<Groceries>(
-                  contentPadding: EdgeInsets.all(0.0),
-                  value: Groceries.pickles,
-                  groupValue: _groceryItem,
-                  onChanged: (Groceries? value) {
-                    setState(() {
-                      _groceryItem = value;
-                    });
-                  },
-                  title: const Text(
-                    'Tarjeta',
-                    style: TextStyle(
-                      fontWeight: FontWeight.normal,
-                      fontSize: 16,
-                      fontFamily: 'Roboto',
+              const Text('Pay with',
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  )),
+              SizedBox(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: RadioListTile<Groceries>(
+                        contentPadding: EdgeInsets.all(0.0),
+                        value: Groceries.pickles,
+                        groupValue: _groceryItem,
+                        onChanged: (Groceries? value) {
+                          setState(() {
+                            _groceryItem = value;
+                          });
+                        },
+                        title: const Text(
+                          'Tarjeta',
+                          style: TextStyle(
+                            fontWeight: FontWeight.normal,
+                            fontSize: 16,
+                            fontFamily: 'Roboto',
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: RadioListTile<Groceries>(
-                  contentPadding: EdgeInsets.all(0.0),
-                  value: Groceries.tomato,
-                  groupValue: _groceryItem,
-                  onChanged: (Groceries? value) {
-                    setState(() {
-                      _groceryItem = value;
-                    });
-                  },
-                  title: const Text(
-                    'PayPal',
-                    style: TextStyle(
-                      fontWeight: FontWeight.normal,
-                      fontSize: 16,
-                      fontFamily: 'Roboto',
+                    Expanded(
+                      child: RadioListTile<Groceries>(
+                        contentPadding: EdgeInsets.all(0.0),
+                        value: Groceries.tomato,
+                        groupValue: _groceryItem,
+                        onChanged: (Groceries? value) {
+                          setState(() {
+                            _groceryItem = value;
+                          });
+                        },
+                        title: const Text(
+                          'PayPal',
+                          style: TextStyle(
+                            fontWeight: FontWeight.normal,
+                            fontSize: 16,
+                            fontFamily: 'Roboto',
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
               ),
             ],
@@ -192,7 +196,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ],
             ),
           ),
-          const Padding(padding: EdgeInsets.all(20)),
+          const Padding(padding: EdgeInsets.all(10)),
           const Row(
             children: [
               Text('Correo electronico o nro telefono',
@@ -228,7 +232,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               },
             ),
           ),
-          const Padding(padding: EdgeInsets.all(10)),
+          const Padding(padding: EdgeInsets.all(5)),
           const Column(
             children: [
               Text(
@@ -242,7 +246,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               )
             ],
           ),
-          const Padding(padding: EdgeInsets.all(110)),
+          const Padding(padding: EdgeInsets.all(50)),
           SizedBox(
               width: 380,
               height: 58,

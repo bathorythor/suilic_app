@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20general/Reg_general_Pag.dart';
 
 class PagoGeneral extends StatelessWidget {
   const PagoGeneral({super.key});

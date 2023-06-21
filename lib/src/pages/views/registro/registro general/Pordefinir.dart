@@ -142,8 +142,13 @@ class _Pordefinir extends State<Pordefinir> {
                   child: TextField(
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
-                      prefixIcon: const Icon(Icons.alternate_email,
-                          color: Color(0xFF0080ff)),
+                      prefixIcon: const Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: ImageIcon(
+                          AssetImage('assets/imagenes/iconos/iconarroba.png'),
+                          color: Color(0xFF0080ff),
+                        ),
+                      ),
                       hintText: "Enviar correo",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
