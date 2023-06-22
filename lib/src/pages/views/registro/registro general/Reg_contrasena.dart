@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/Membresia_General.dart';
+import 'package:suilic_app/src/pages/views/registro/registro%20general/Pordefinir.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/Reg_general_Pag.dart';
 
 class Regcontrasena extends StatefulWidget {
@@ -293,59 +294,68 @@ class _Regcontrasena extends State<Regcontrasena> {
                 ),
               ),
               const Padding(padding: EdgeInsets.all(10)),
-              SizedBox(
-                width: 380,
-                height: 58,
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Color.fromARGB(130, 172, 172, 172),
-                          spreadRadius: 0.01,
-                          blurRadius: 5,
-                          offset: Offset(1.5, 1.5),
-                        )
-                      ]),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const RegGeralPage()));
-                    },
-                    icon: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 10,
-                      ),
-                      child: Icon(
-                        // <-- Icon
-                        Icons.arrow_circle_left_rounded,
-                        size: 30.0,
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color.fromARGB(130, 34, 33, 33),
+                      spreadRadius: 0.01,
+                      blurRadius: 2,
+                      offset: Offset(0.5, 0.5),
+                    ),
+                  ],
+                ),
+                child: SizedBox(
+                  width: 380,
+                  height: 58,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Pordefinir()));
+                      },
+                      child: Container(
+                        height: 58,
+                        width: 380,
+                        alignment: Alignment.centerLeft,
+                        color: Color(0xFF0080ff),
+                        padding: EdgeInsets.all(15),
+                        child: Row(
+                          children: [
+                            Container(
+                              child: InkWell(
+                                splashColor: Colors.transparent,
+                                child: Image.asset(
+                                  'assets/imagenes/iconos/iconatras.png',
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                            const Padding(
+                                padding: EdgeInsets.symmetric(
+                              horizontal: 52,
+                            )),
+                            const Text(
+                              'Ir atras',
+                              style: TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    label: const Row(
-                      children: [
-                        Padding(
-                            padding: EdgeInsets.symmetric(
-                          horizontal: 40,
-                        )),
-                        Center(child: Text('Ir atras')),
-                      ],
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      textStyle: const TextStyle(
-                          fontFamily: 'Roboto',
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold),
-                      primary: Color(0xFF0080ff),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                    ), // <-- Text
                   ),
                 ),
               ),
+              Padding(padding: EdgeInsets.all(10)),
             ],
           ),
         ],

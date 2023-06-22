@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:suilic_app/src/pages/Pre_reg_pag.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/Reg_general_Pag.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/Transacciones_general.dart';
 
@@ -169,7 +170,7 @@ class _MembresiaGeneral extends State<MembresiaGeneral> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const RegGeralPage()));
+                                  builder: (context) => PreReg()));
                         },
                         child: const Text('Omitir'),
                         style: ElevatedButton.styleFrom(

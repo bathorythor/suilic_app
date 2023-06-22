@@ -317,8 +317,9 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                 children: [
                   SizedBox(
                     child: Text(
-                      '${date.year}/       ${date.month}/        ${date.day}',
+                      '${date.year}/ ${date.month} / ${date.day}',
                       style: const TextStyle(
+                          color: Color(0xFF0080ff),
                           fontFamily: 'Roboto',
                           fontSize: 20,
                           fontWeight: FontWeight.bold),

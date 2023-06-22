@@ -50,7 +50,7 @@ class _PreRegState extends State<PreReg> {
       body: Center(
         child: ListView(
           children: <Widget>[
-            const SizedBox(height: 40),
+            const SizedBox(height: 10),
             Container(
               child: Center(
                 child: Text(
@@ -62,7 +62,7 @@ class _PreRegState extends State<PreReg> {
                 ),
               ),
             ), //texto titulo
-            const SizedBox(height: 40),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Card(
@@ -79,7 +79,7 @@ class _PreRegState extends State<PreReg> {
                 ),
               ),
             ), // texto subtitulo
-            const SizedBox(height: 60),
+            const SizedBox(height: 20),
 
             // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             // children: <Widget>[
@@ -165,7 +165,7 @@ class _PreRegState extends State<PreReg> {
                       onPressed: () => actualizarContenido(
                         'assets/imagenes/despachos.png',
                         'Usuario Despachos',
-                        'Texto de la opción 2',
+                        'you are in need of everything: grey roads, deep glooms, birds that sing even in silence.',
                       ),
                       child: const Text(
                         'Despachos',
@@ -213,7 +213,7 @@ class _PreRegState extends State<PreReg> {
                         onPressed: () => actualizarContenido(
                           'assets/imagenes/servicios.png',
                           'Usuario Servicios',
-                          'Texto de la opción 3',
+                          'you are in need of everything the dream requires,to become one with the music,of the most faraway blues,so that eventually your soul,will have confidence in death.',
                         ),
                         child: const Text(
                           'Servicios',
