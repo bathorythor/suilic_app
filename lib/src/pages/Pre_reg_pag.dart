@@ -165,7 +165,7 @@ class _PreRegState extends State<PreReg> {
                       onPressed: () => actualizarContenido(
                         'assets/imagenes/despachos.png',
                         'Usuario Despachos',
-                        'you are in need of everything: grey roads, deep glooms, birds that sing even in silence.',
+                        'you are in need of everything: grey roads, deep glooms, birds that sing even in silence; ',
                       ),
                       child: const Text(
                         'Despachos',
@@ -213,7 +213,7 @@ class _PreRegState extends State<PreReg> {
                         onPressed: () => actualizarContenido(
                           'assets/imagenes/servicios.png',
                           'Usuario Servicios',
-                          'you are in need of everything the dream requires,to become one with the music,of the most faraway blues,so that eventually your soul,will have confidence in death.',
+                          'Texto de la opción 3',
                         ),
                         child: const Text(
                           'Servicios',

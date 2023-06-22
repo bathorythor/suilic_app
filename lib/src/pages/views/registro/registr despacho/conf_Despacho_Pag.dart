@@ -20,10 +20,28 @@ class _Confdespacho extends State<Confdespacho> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        foregroundColor: Colors.white,
-        title: const Text("Confirmacion de Documento"),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(220),
+        child: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0.0,
+          toolbarHeight: 400.0,
+          centerTitle: true,
+          flexibleSpace: ClipRRect(
+            borderRadius: const BorderRadius.only(
+              bottomRight: Radius.circular(20),
+              bottomLeft: Radius.circular(20),
+            ),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Colors.white,
+                  image: DecorationImage(
+                    image: AssetImage('assets/imagenes/documento.png'),
+                    fit: BoxFit.fill,
+                  )),
+            ),
+          ),
+        ),
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(
@@ -31,20 +49,40 @@ class _Confdespacho extends State<Confdespacho> {
           vertical: 30.0,
         ),
         children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Padding(padding: EdgeInsets.all(250)),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const MembresiaDespacho()));
-                  },
-                  child: const Text('CONFIRMAR')),
-            ],
-          )
+          Padding(padding: EdgeInsets.all(100)),
+          SizedBox(
+            width: 380,
+            height: 58,
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color.fromARGB(130, 211, 210, 210),
+                      spreadRadius: 0.01,
+                      blurRadius: 5,
+                      offset: Offset(1.5, 1.5),
+                    )
+                  ]),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MembresiaDespacho()));
+                },
+                style: ElevatedButton.styleFrom(
+                    textStyle: const TextStyle(
+                        fontFamily: 'Roboto',
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold),
+                    primary: Color(0xFF0080ff),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15))),
+                child: const Center(child: Text('Registrarse ahora')),
+              ),
+            ),
+          ),
         ],
       ),
     );

@@ -96,8 +96,20 @@ flutter:
      - family: RobotoL
        fonts:
          - asset: assets/fonts/Roboto-MediumItalic.ttf
+     - family: RobotoR
+       fonts:
+         - asset: assets/fonts/Roboto-Regular.ttf
+     - family: RobotoLi
+       fonts:
+         - asset: assets/fonts/Roboto-Light.ttf
+     - family: Robotobol
+       fonts:
+         - asset: assets/fonts/Roboto-BoldItalic.ttf
 
-     
+
+
+
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

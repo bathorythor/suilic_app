@@ -178,7 +178,7 @@ class _MembresiaGeneral extends State<MembresiaGeneral> {
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold),
-                            primary: Color(0xFF0080ff),
+                            primary: Color(0xFF0080FF),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15)))),
                   )),

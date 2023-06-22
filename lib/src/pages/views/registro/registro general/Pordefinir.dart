@@ -71,7 +71,7 @@ class _Pordefinir extends State<Pordefinir> {
                         Text(' Lorem ipsum dolor sit amet, ',
                             style: TextStyle(
                               fontWeight: FontWeight.normal,
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontSize: 16,
                             )),
                       ],
@@ -82,7 +82,7 @@ class _Pordefinir extends State<Pordefinir> {
                         Text(' consectetuer adipiscing elit, ',
                             style: TextStyle(
                               fontWeight: FontWeight.normal,
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontSize: 16,
                             )),
                       ],
@@ -93,7 +93,7 @@ class _Pordefinir extends State<Pordefinir> {
                         Text(' sed diam nonummy nibh euismod. r sit amet,  ',
                             style: TextStyle(
                               fontWeight: FontWeight.normal,
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontSize: 16,
                             )),
                       ],
