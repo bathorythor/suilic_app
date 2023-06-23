@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/Login_Pag.dart';
-import 'package:suilic_app/src/pages/Pre_reg_pag.dart';
 
 class InicioLoginPag extends StatefulWidget {
   const InicioLoginPag({super.key});
@@ -49,24 +47,6 @@ class _InicioLoginPag extends State<InicioLoginPag> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Container(
-              //   width: double.infinity,
-              //   decoration: BoxDecoration(
-              //     borderRadius: BorderRadius.circular(30.0),
-              //   ),
-              //   child: ClipRRect(
-              //     borderRadius: const BorderRadius.vertical(
-              //         top: Radius.zero, bottom: Radius.circular(20.0)),
-              //     child: Image.asset(
-              //       'assets/imagenes/inicio_login.png',
-              //       fit: BoxFit.cover,
-              //     ),
-              //   ),
-              // ),
-              // const Divider(
-              //   height: 18.0,
-              // ),
-              // Padding(padding: EdgeInsets.all(5.0)),
               Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
