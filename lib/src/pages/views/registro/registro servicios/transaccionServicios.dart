@@ -98,7 +98,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -118,7 +118,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -201,6 +201,115 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ],
             ),
           ),
+          Column(
+            children: [
+              const Padding(
+                //inputfield titulo
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Text('Titular',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontFamily: 'Roboto',
+                          fontSize: 17,
+                        )),
+                  ],
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.white,
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(130, 221, 221, 221),
+                        spreadRadius: 0.01,
+                        blurRadius: 1,
+                        offset: Offset(0, 2),
+                      ),
+                    ]),
+                child: SizedBox(
+                  width: 380,
+                  height: 58,
+                  child: TextField(
+                    textAlign: TextAlign.left,
+                    decoration: InputDecoration(
+                      hintText: "Nombre del titular",
+                      hintStyle: const TextStyle(
+                        fontFamily: 'RobotoR',
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        borderSide:
+                            BorderSide(color: Color(0xFF0080ff), width: 1.8),
+                      ),
+                    ),
+                    onSubmitted: (valor) {
+                      _titular = valor;
+                      print('El nombre es: $_titular');
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Text('Número de tarjeta',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontFamily: 'Roboto',
+                          fontSize: 17,
+                        )),
+                  ],
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.white,
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(130, 221, 221, 221),
+                        spreadRadius: 0.01,
+                        blurRadius: 1,
+                        offset: Offset(0, 2),
+                      ),
+                    ]),
+                child: SizedBox(
+                  width: 380,
+                  height: 58,
+                  child: TextField(
+                    textAlign: TextAlign.left,
+                    decoration: InputDecoration(
+                      hintText: "Número de tarjeta ",
+                      hintStyle: const TextStyle(
+                        fontFamily: 'RobotoR',
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        borderSide:
+                            BorderSide(color: Color(0xFF0080ff), width: 1.8),
+                      ),
+                    ),
+                    onSubmitted: (valor) {
+                      _numerotarjeta = valor;
+                      print('El nombre es: $_numerotarjeta');
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
           Padding(padding: EdgeInsets.all(5)),
           Row(
             children: [
@@ -261,9 +370,10 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             child: const Text(
               'Número de pin',
               style: TextStyle(
-                  fontFamily: 'Roboto',
-                  fontSize: 17,
-                  fontWeight: FontWeight.bold),
+                fontFamily: 'Roboto',
+                fontSize: 17,
+                fontWeight: FontWeight.normal,
+              ),
             ),
           ),
           Padding(padding: EdgeInsets.all(2)),
@@ -289,8 +399,9 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                 decoration: InputDecoration(
                   hintText: "Numero de pin",
                   hintStyle: const TextStyle(
-                    fontFamily: 'Roboto',
+                    fontFamily: 'RobotoR',
                     fontSize: 16.0,
+                    fontWeight: FontWeight.normal,
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
@@ -312,7 +423,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 17,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.normal,
               ),
             ),
           ),
@@ -348,7 +459,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                         child: Text(
                           'Ext',
                           style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontSize: 16,
                               fontWeight: FontWeight.normal),
                         ),
@@ -407,7 +518,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                       decoration: InputDecoration(
                         hintText: " Número de Telefono",
                         hintStyle: const TextStyle(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'RobotoR',
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,
                         ),
@@ -441,7 +552,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                       textStyle: const TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 18,
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.normal),
                       primary: Color(0xFF0080ff),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15))))),

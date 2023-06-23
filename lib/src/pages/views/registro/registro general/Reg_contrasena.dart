@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/Membresia_General.dart';
 import 'package:suilic_app/src/pages/views/registro/registro%20general/Pordefinir.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20general/Reg_general_Pag.dart';
 
 class Regcontrasena extends StatefulWidget {
   const Regcontrasena({super.key});
@@ -289,9 +288,10 @@ class _Regcontrasena extends State<Regcontrasena> {
                       child: const Center(child: Text('Confirmar')),
                       style: ElevatedButton.styleFrom(
                           textStyle: const TextStyle(
-                              fontFamily: 'Roboto',
-                              fontSize: 18,
-                              fontWeight: FontWeight.normal),
+                            fontFamily: 'Roboto',
+                            fontSize: 18,
+                            fontWeight: FontWeight.normal,
+                          ),
                           primary: Color(0xFF0080ff),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15)))),

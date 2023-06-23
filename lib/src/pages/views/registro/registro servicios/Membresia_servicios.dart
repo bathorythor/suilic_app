@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20servicios/Reg_servicios_pag.dart';
+
 import 'package:suilic_app/src/pages/views/registro/registro%20servicios/transaccionServicios.dart';
 
 import '../../home/barra_navegacion_principal.dart';
@@ -131,7 +131,7 @@ class _MembresiaServicios extends State<MembresiaServicios> {
                                       textStyle: const TextStyle(
                                           fontFamily: 'Roboto',
                                           fontSize: 14,
-                                          fontWeight: FontWeight.bold),
+                                          fontWeight: FontWeight.normal),
                                       primary: Color(0xFF0080ff),
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
@@ -176,9 +176,10 @@ class _MembresiaServicios extends State<MembresiaServicios> {
                         child: const Text('Omitir'),
                         style: ElevatedButton.styleFrom(
                             textStyle: const TextStyle(
-                                fontFamily: 'Roboto',
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold),
+                              fontFamily: 'Roboto',
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal,
+                            ),
                             primary: Color(0xFF0080FF),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15)))),
@@ -209,9 +210,10 @@ class _MembresiaServicios extends State<MembresiaServicios> {
                         child: const Text('Compras'),
                         style: ElevatedButton.styleFrom(
                             textStyle: const TextStyle(
-                                fontFamily: 'Roboto',
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold),
+                              fontFamily: 'Roboto',
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal,
+                            ),
                             primary: Color(0xFF0080ff),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15)))),

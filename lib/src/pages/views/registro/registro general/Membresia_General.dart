@@ -130,7 +130,7 @@ class _MembresiaGeneral extends State<MembresiaGeneral> {
                                       textStyle: const TextStyle(
                                           fontFamily: 'Roboto',
                                           fontSize: 14,
-                                          fontWeight: FontWeight.bold),
+                                          fontWeight: FontWeight.normal),
                                       primary: Color(0xFF0080ff),
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
@@ -177,7 +177,7 @@ class _MembresiaGeneral extends State<MembresiaGeneral> {
                             textStyle: const TextStyle(
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold),
+                                fontWeight: FontWeight.normal),
                             primary: Color(0xFF0080FF),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15)))),
@@ -210,7 +210,7 @@ class _MembresiaGeneral extends State<MembresiaGeneral> {
                             textStyle: const TextStyle(
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold),
+                                fontWeight: FontWeight.normal),
                             primary: Color(0xFF0080ff),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15)))),

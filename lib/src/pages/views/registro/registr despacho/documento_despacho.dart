@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:suilic_app/src/pages/views/registro/registr%20despacho/Reg_despacho_pag.dart';
 import 'package:suilic_app/src/pages/views/registro/registr%20despacho/conf_Despacho_Pag.dart';
-import 'package:suilic_app/src/pages/views/registro/registr%20despacho/fotografia_despacho.dart';
 
 class DocumenDespacho extends StatefulWidget {
   const DocumenDespacho({super.key});
@@ -110,9 +109,10 @@ class _DocumenDespacho extends State<DocumenDespacho> {
                               child: Text('Tomar foto frontal '),
                               style: ElevatedButton.styleFrom(
                                   textStyle: const TextStyle(
-                                      fontFamily: 'RobotoR',
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
+                                    fontFamily: 'RobotoR',
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                   primary: Color(0xFF000000),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20))),
@@ -181,12 +181,13 @@ class _DocumenDespacho extends State<DocumenDespacho> {
                             height: 40,
                             child: ElevatedButton(
                               onPressed: () {},
-                              child: Text('Tomar foto revés '),
+                              child: const Text('Tomar foto revés '),
                               style: ElevatedButton.styleFrom(
                                   textStyle: const TextStyle(
-                                      fontFamily: 'RobotoR',
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
+                                    fontFamily: 'RobotoR',
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                   primary: Color(0xFF000000),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20))),
@@ -230,7 +231,7 @@ class _DocumenDespacho extends State<DocumenDespacho> {
                               textStyle: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 18,
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.normal),
                               primary: Color(0xFF0080FF),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15)))),
@@ -256,14 +257,14 @@ class _DocumenDespacho extends State<DocumenDespacho> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        const FotografiaDespacho()));
+                                        const Confdespacho()));
                           },
                           child: const Text('Confirmar'),
                           style: ElevatedButton.styleFrom(
                               textStyle: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 18,
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.normal),
                               primary: Color(0xFF0080ff),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15)))),

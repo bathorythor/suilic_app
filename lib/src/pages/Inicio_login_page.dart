@@ -10,7 +10,6 @@ class InicioLoginPag extends StatefulWidget {
 }
 
 class _InicioLoginPag extends State<InicioLoginPag> {
-
   String _email = '';
   String _password = '';
 

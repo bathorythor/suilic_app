@@ -160,6 +160,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -198,6 +199,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -236,6 +238,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -276,9 +279,10 @@ class _RegGeralPage extends State<RegGeralPage> {
                     },
                     style: ElevatedButton.styleFrom(
                         textStyle: const TextStyle(
-                            fontFamily: 'Roboto',
-                            fontSize: 18,
-                            fontWeight: FontWeight.normal),
+                          fontFamily: 'Roboto',
+                          fontSize: 18,
+                          fontWeight: FontWeight.normal,
+                        ),
                         primary: Color(0xFF0080ff),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15))),

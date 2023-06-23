@@ -1,9 +1,7 @@
 import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20servicios/CompraServicios.dart';
-
-import '../../home/barra_navegacion_principal.dart';
+import 'package:suilic_app/src/pages/views/registro/registro%20servicios/usuarioservicios.dart';
 
 class PagoServicios extends StatelessWidget {
   const PagoServicios({super.key});
@@ -95,7 +93,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -115,7 +113,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -203,7 +201,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             children: [
               Text('Correo electronico o nro telefono',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.normal,
                     fontSize: 17,
                     fontFamily: 'Roboto',
                   )),
@@ -216,9 +214,13 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: "Ingresa tu correo",
+                hintStyle: const TextStyle(
+                    fontFamily: 'RobotoR',
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.normal),
 
                 contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 1, vertical: 2),
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
                 // helperText: 'Ingrese un email valido',
                 // suffixIcon: const Icon(
                 //   Icons.card_membership_sharp,
@@ -257,13 +259,13 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const BarNavHome()));
+                            builder: (context) => const Usuarioservicios()));
                   },
                   child: const Text('Guardar y continuar'),
                   style: ElevatedButton.styleFrom(
                       textStyle: const TextStyle(
                         fontFamily: 'Roboto',
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.normal,
                         fontSize: 18,
                       ),
                       primary: Color(0xFF0080ff),

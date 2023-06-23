@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-import 'package:suilic_app/src/pages/views/home/barra_navegacion_principal.dart';
+import '../../home/barra_navegacion_principal.dart';
 
-class Confiusuario extends StatefulWidget {
-  const Confiusuario({super.key});
+class Usuariodespacho extends StatefulWidget {
+  const Usuariodespacho({super.key});
 
   @override
-  State<Confiusuario> createState() => _Confiusuario();
+  State<Usuariodespacho> createState() => _Usuariodespacho();
 }
 
-class _Confiusuario extends State<Confiusuario> {
+class _Usuariodespacho extends State<Usuariodespacho> {
   //    variables de registro
 
   String _documento = '';
@@ -101,9 +101,10 @@ class _Confiusuario extends State<Confiusuario> {
                       ),
                       hintText: "Documentos",
                       hintStyle: const TextStyle(
-                          fontFamily: 'RobotoR',
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.normal),
+                        fontFamily: 'RobotoR',
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
+                      ),
                       suffixIcon: const Padding(
                         padding: EdgeInsets.all(5.0),
                         child: ImageIcon(
@@ -240,10 +241,9 @@ class _Confiusuario extends State<Confiusuario> {
                       ),
                       hintText: "Cambio de foto",
                       hintStyle: const TextStyle(
-                        fontFamily: 'RobotoR',
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.normal,
-                      ),
+                          fontFamily: 'RobotoR',
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.normal),
                       suffixIcon: const Padding(
                         padding: EdgeInsets.all(5.0),
                         child: ImageIcon(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/Pre_reg_pag.dart';
+
 import 'package:suilic_app/src/pages/views/registro/registro%20servicios/Reg_servicios_pag.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20servicios/fotografia_servicios.dart';
+import 'package:suilic_app/src/pages/views/registro/registro%20servicios/conf_servicios_Pag.dart';
 
 class Documentservicios extends StatefulWidget {
   const Documentservicios({super.key});
@@ -110,9 +110,10 @@ class _Documentservicios extends State<Documentservicios> {
                               child: Text('Tomar foto frontal '),
                               style: ElevatedButton.styleFrom(
                                   textStyle: const TextStyle(
-                                      fontFamily: 'Roboto',
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold),
+                                    fontFamily: 'Roboto',
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                   primary: Color(0xFF000000),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20))),
@@ -184,9 +185,10 @@ class _Documentservicios extends State<Documentservicios> {
                               child: Text('Tomar foto revés '),
                               style: ElevatedButton.styleFrom(
                                   textStyle: const TextStyle(
-                                      fontFamily: 'Roboto',
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold),
+                                    fontFamily: 'Roboto',
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                   primary: Color(0xFF000000),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20))),
@@ -229,7 +231,7 @@ class _Documentservicios extends State<Documentservicios> {
                               textStyle: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 18,
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.normal),
                               primary: Color(0xFF0080FF),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15)))),
@@ -255,14 +257,14 @@ class _Documentservicios extends State<Documentservicios> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        const Fotografiaservicios()));
+                                        const Confservicios()));
                           },
                           child: const Text('Confirmar'),
                           style: ElevatedButton.styleFrom(
                               textStyle: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 18,
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.normal),
                               primary: Color(0xFF0080ff),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15)))),

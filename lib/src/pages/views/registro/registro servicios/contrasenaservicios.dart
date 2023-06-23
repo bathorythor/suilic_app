@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/views/registro/registr%20despacho/documento_despacho.dart';
+import 'package:suilic_app/src/pages/views/registro/registro%20servicios/Membresia_servicios.dart';
+import 'package:suilic_app/src/pages/views/registro/registro%20servicios/conf_servicios_Pag.dart';
 
-import '../../../Pre_reg_pag.dart';
-
-class RegDespachosPage extends StatefulWidget {
-  const RegDespachosPage({super.key});
+class Contrasenaservicios extends StatefulWidget {
+  const Contrasenaservicios({super.key});
 
   @override
-  State<RegDespachosPage> createState() => _RegDespachosPage();
+  State<Contrasenaservicios> createState() => _Contrasenaservicios();
 }
 
-class _RegDespachosPage extends State<RegDespachosPage> {
+class _Contrasenaservicios extends State<Contrasenaservicios> {
   //    variables de registro
-  String _telefono = "";
-  String _password = '';
-  String _usuario = "";
-  String _edad = '';
-  String _codigo = '';
+  String _contrasena = "";
+  String _newcontrasena = '';
+  String _confircontrasena = '';
+  String _verificacion = "";
 
   /////////////////////////////
 
@@ -24,11 +22,11 @@ class _RegDespachosPage extends State<RegDespachosPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(240),
+        preferredSize: const Size.fromHeight(238),
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 00.0,
+          toolbarHeight: 0.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
@@ -39,7 +37,7 @@ class _RegDespachosPage extends State<RegDespachosPage> {
               decoration: const BoxDecoration(
                   color: Colors.white,
                   image: DecorationImage(
-                    image: AssetImage('assets/imagenes/Componente1.png'),
+                    image: AssetImage('assets/imagenes/contrasenas.png'),
                     fit: BoxFit.fill,
                   )),
             ),
@@ -53,53 +51,20 @@ class _RegDespachosPage extends State<RegDespachosPage> {
         ),
         children: <Widget>[
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(11),
-                    color: Colors.white,
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color.fromARGB(130, 221, 221, 221),
-                        spreadRadius: 0.01,
-                        blurRadius: 1,
-                        offset: Offset(0, 2),
-                      ),
-                      // BoxShadow(
-                      //   color: Color.fromARGB(130, 122, 122, 122),
-                      //   spreadRadius: 0.01,
-                      //   blurRadius: 1,
-                      //   offset: Offset(1, -2),
-                      // ),
-                    ]),
-                child: SizedBox(
-                  width: 380,
-                  height: 58,
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(
-                      hintText: "Ingresa tu número teléfono",
-                      hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.normal,
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        borderSide:
-                            BorderSide(color: Color(0xFF0080ff), width: 1.8),
-                      ),
-                    ),
-                    onSubmitted: (valor) {
-                      _telefono = valor;
-                      print('El nombre es: $_telefono');
-                    },
-                  ),
+              const Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Text('Contraseña actual',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontFamily: 'Roboto',
+                          fontSize: 16,
+                        )),
+                  ],
                 ),
               ),
-              const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8)),
               Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
@@ -120,7 +85,6 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                      hintText: "Establece tu contraseña",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -133,14 +97,25 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                       ),
                     ),
                     onSubmitted: (valor) {
-                      _password = valor;
-                      print('El nombre es: $_password');
+                      _contrasena = valor;
+                      print('El nombre es: $_contrasena');
                     },
                   ),
                 ),
               ),
               const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8)),
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Text('Nueva contraseña ',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontFamily: 'Roboto',
+                          fontSize: 16,
+                        )),
+                  ],
+                ),
+              ),
               Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
@@ -157,9 +132,10 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                   width: 380,
                   height: 58,
                   child: TextField(
+                    enableInteractiveSelection: false,
+                    obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                      hintText: "Ingresa tu número de usuario",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -172,14 +148,25 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                       ),
                     ),
                     onSubmitted: (valor) {
-                      _usuario = valor;
-                      print('El nombre es: $_usuario');
+                      _newcontrasena = valor;
+                      print('El nombre es: $_newcontrasena');
                     },
                   ),
                 ),
               ),
               const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8)),
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Text('Confirmar contraseña ',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontFamily: 'Roboto',
+                          fontSize: 16,
+                        )),
+                  ],
+                ),
+              ),
               Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
@@ -196,9 +183,10 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                   width: 380,
                   height: 58,
                   child: TextField(
+                    enableInteractiveSelection: false,
+                    obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                      hintText: "Ingresa tu edad",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -211,14 +199,25 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                       ),
                     ),
                     onSubmitted: (valor) {
-                      _edad = valor;
-                      print('El nombre es: $_edad');
+                      _confircontrasena = valor;
+                      print('El nombre es: $_confircontrasena');
                     },
                   ),
                 ),
               ),
               const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8)),
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Text('Ingresa código de verificación ',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontFamily: 'Roboto',
+                          fontSize: 16,
+                        )),
+                  ],
+                ),
+              ),
               Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
@@ -235,9 +234,10 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                   width: 380,
                   height: 58,
                   child: TextField(
+                    enableInteractiveSelection: false,
+                    obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                      hintText: "Código de verificación",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -250,15 +250,17 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                       ),
                     ),
                     onSubmitted: (valor) {
-                      _codigo = valor;
-                      print('El nombre es: $_codigo');
+                      _verificacion = valor;
+                      print('El nombre es: $_verificacion');
                     },
                   ),
                 ),
               ),
               const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8)),
-              const Padding(padding: EdgeInsets.all(5)),
+                  padding: EdgeInsets.symmetric(
+                vertical: 5,
+              )),
+              const Padding(padding: EdgeInsets.all(10)),
               SizedBox(
                 width: 380,
                 height: 58,
@@ -267,33 +269,32 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                       borderRadius: BorderRadius.circular(15),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color.fromARGB(130, 211, 210, 210),
+                          color: Color.fromARGB(130, 172, 172, 172),
                           spreadRadius: 0.01,
                           blurRadius: 5,
                           offset: Offset(1.5, 1.5),
                         )
                       ]),
                   child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const DocumenDespacho()));
-                    },
-                    style: ElevatedButton.styleFrom(
-                        textStyle: const TextStyle(
-                          fontFamily: 'Roboto',
-                          fontSize: 18,
-                          fontWeight: FontWeight.normal,
-                        ),
-                        primary: Color(0xFF0080ff),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15))),
-                    child: const Center(child: Text('Registrarse ahora')),
-                  ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const MembresiaServicios()));
+                      },
+                      child: const Center(child: Text('Confirmar')),
+                      style: ElevatedButton.styleFrom(
+                          textStyle: const TextStyle(
+                              fontFamily: 'Roboto',
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal),
+                          primary: Color(0xFF0080ff),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15)))),
                 ),
               ),
-              Padding(padding: EdgeInsets.all(8)),
+              const Padding(padding: EdgeInsets.all(10)),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
@@ -313,8 +314,10 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                     borderRadius: BorderRadius.circular(15),
                     child: InkWell(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => PreReg()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Confservicios()));
                       },
                       child: Container(
                         height: 58,

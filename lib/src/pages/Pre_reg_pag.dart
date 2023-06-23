@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'Home_pag.dart';
-
 class PreReg extends StatefulWidget {
   @override
   _PreRegState createState() => _PreRegState();
@@ -121,7 +119,7 @@ class _PreRegState extends State<PreReg> {
                                     borderRadius: BorderRadius.circular(15))),
                             onPressed: () => actualizarContenido(
                                 'assets/imagenes/usergeneral.png',
-                                'Usuario General',
+                                'General',
                                 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno '),
                             child: const Text(
                               'SOY CLIENTE',
@@ -251,11 +249,11 @@ class _PreRegState extends State<PreReg> {
               // height: 58,
               child: TextButton(
                 onPressed: () {
-                  if (titulo == 'Usuario General') {
+                  if (titulo == 'General') {
                     Navigator.pushNamed(context, 'regGeralPage');
-                  } else if (titulo == 'Usuario Despachos') {
+                  } else if (titulo == 'Despachos') {
                     Navigator.pushNamed(context, 'regDespachosPage');
-                  } else {
+                  } else if (titulo == 'Servicios') {
                     Navigator.pushNamed(context, 'regServiciosPage');
                   }
                 },
@@ -264,9 +262,9 @@ class _PreRegState extends State<PreReg> {
                     'SIGUIENTE',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 18.0,
+                      fontSize: 25.0,
                       fontFamily: 'Robotobol',
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.normal,
                     ),
                   ),
                 ),
