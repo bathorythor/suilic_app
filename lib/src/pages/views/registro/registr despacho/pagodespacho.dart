@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:suilic_app/src/pages/views/home/barra_navegacion_principal.dart';
-import 'package:suilic_app/src/pages/views/registro/registr%20despacho/Compra_despachos.dart';
 
 class Pagodespaho extends StatelessWidget {
   const Pagodespaho({super.key});
@@ -43,7 +42,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 200.0,
+          toolbarHeight: 00.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(

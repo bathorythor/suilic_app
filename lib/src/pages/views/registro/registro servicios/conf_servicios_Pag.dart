@@ -25,7 +25,7 @@ class _Confservicios extends State<Confservicios> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 400.0,
+          toolbarHeight: 00.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(

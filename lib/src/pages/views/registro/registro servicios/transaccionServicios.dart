@@ -45,7 +45,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 150.0,
+          toolbarHeight: 0.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
@@ -202,167 +202,55 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             ),
           ),
           Padding(padding: EdgeInsets.all(5)),
-          Column(
-            children: [
-              const Padding(
-                //inputfield titulo
-                padding: EdgeInsets.all(5.0),
-                child: Row(
-                  children: [
-                    Text('Titular',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Roboto',
-                          fontSize: 17,
-                        )),
-                  ],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.white,
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color.fromARGB(130, 221, 221, 221),
-                        spreadRadius: 0.01,
-                        blurRadius: 1,
-                        offset: Offset(0, 2),
-                      ),
-                    ]),
-                child: SizedBox(
-                  width: 380,
-                  height: 58,
-                  child: TextField(
-                    textAlign: TextAlign.left,
-                    decoration: InputDecoration(
-                      hintText: "Nombre del titular",
-                      hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 16.0,
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        borderSide:
-                            BorderSide(color: Color(0xFF0080ff), width: 1.8),
-                      ),
-                    ),
-                    onSubmitted: (valor) {
-                      _titular = valor;
-                      print('El nombre es: $_titular');
-                    },
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Column(
-            children: [
-              const Padding(
-                padding: EdgeInsets.all(5.0),
-                child: Row(
-                  children: [
-                    Text('Número de tarjeta',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Roboto',
-                          fontSize: 16,
-                        )),
-                  ],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.white,
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color.fromARGB(130, 221, 221, 221),
-                        spreadRadius: 0.01,
-                        blurRadius: 1,
-                        offset: Offset(0, 2),
-                      ),
-                    ]),
-                child: SizedBox(
-                  width: 380,
-                  height: 58,
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(
-                      hintText: "Número de tarjeta ",
-                      hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 16.0,
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        borderSide:
-                            BorderSide(color: Color(0xFF0080ff), width: 1.8),
-                      ),
-                    ),
-                    onSubmitted: (valor) {
-                      _numerotarjeta = valor;
-                      print('El nombre es: $_numerotarjeta');
-                    },
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Padding(padding: EdgeInsets.all(2)),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Row(
             children: [
               Column(
                 children: [
-                  SizedBox(
-                    child: Text(
-                      '${date.year}/ ${date.month} / ${date.day}',
-                      style: const TextStyle(
-                          color: Color(0xFF0080ff),
-                          fontFamily: 'Roboto',
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        textStyle: const TextStyle(
+                            fontFamily: 'Roboto',
+                            fontSize: 16,
+                            fontWeight: FontWeight.normal),
+                        primary: Color(0xFF0080ff),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15))),
+                    onPressed: () async {
+                      DateTime? newDate = await showDatePicker(
+                        context: context,
+                        initialDate: date,
+                        firstDate: DateTime(1900),
+                        lastDate: DateTime(2100),
+                      );
+                      if (newDate == null) return;
+                      setState(() => date = newDate);
+                    },
+                    child: const SizedBox(
+                      width: 186,
+                      height: 58,
+                      child: Center(
+                        child: Text(
+                          ' fecha de expiración',
+                          style: TextStyle(
+                              fontFamily: 'Roboto',
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal),
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 1,
-              ),
-              Padding(padding: EdgeInsets.all(2)),
-              Center(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      textStyle: const TextStyle(
-                          fontFamily: 'Roboto',
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                      primary: Color(0xFF0080ff),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15))),
-                  onPressed: () async {
-                    DateTime? newDate = await showDatePicker(
-                      context: context,
-                      initialDate: date,
-                      firstDate: DateTime(1900),
-                      lastDate: DateTime(2100),
-                    );
-                    if (newDate == null) return;
-                    setState(() => date = newDate);
-                  },
-                  child: const SizedBox(
-                    width: 280,
-                    height: 58,
-                    child: Center(
-                      child: Text(
-                        'selecciona fecha de expiración',
-                        style: TextStyle(
-                            fontFamily: 'Roboto',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
+              Padding(padding: EdgeInsets.all(5)),
+              Container(
+                child: SizedBox(
+                  child: Text(
+                    '${date.year}/ ${date.month} / ${date.day}',
+                    style: const TextStyle(
+                        color: Color.fromARGB(255, 10, 10, 10),
+                        fontFamily: 'Roboto',
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal),
                   ),
                 ),
               ),

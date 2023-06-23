@@ -24,7 +24,7 @@ class _Pordefinir extends State<Pordefinir> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 200.0,
+          toolbarHeight: 0.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
@@ -55,7 +55,7 @@ class _Pordefinir extends State<Pordefinir> {
                 children: [
                   Text('LOREM IPSUM DOLOR ',
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.normal,
                         fontFamily: 'Roboto',
                         fontSize: 17,
                       )),
@@ -76,7 +76,7 @@ class _Pordefinir extends State<Pordefinir> {
                             )),
                       ],
                     ),
-                    Padding(padding: EdgeInsets.all(5)),
+                    Padding(padding: EdgeInsets.all(0)),
                     Row(
                       children: [
                         Text(' consectetuer adipiscing elit, ',
@@ -87,7 +87,7 @@ class _Pordefinir extends State<Pordefinir> {
                             )),
                       ],
                     ),
-                    Padding(padding: EdgeInsets.all(5)),
+                    Padding(padding: EdgeInsets.all(0)),
                     Row(
                       children: [
                         Text(' sed diam nonummy nibh euismod. r sit amet,  ',
@@ -101,10 +101,11 @@ class _Pordefinir extends State<Pordefinir> {
                   ],
                 )),
               ),
+              Padding(padding: EdgeInsets.all(2)),
               const Divider(
                 color: Color(0xFF0080ff),
                 height: 20,
-                thickness: 1.7,
+                thickness: 1.6,
               ),
               const Padding(padding: EdgeInsets.all(5)),
               const Row(
@@ -201,7 +202,7 @@ class _Pordefinir extends State<Pordefinir> {
                           textStyle: const TextStyle(
                             fontFamily: 'Roboto',
                             fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.normal,
                           ),
                           primary: Color(0xFF0080ff),
                           shape: RoundedRectangleBorder(
@@ -259,7 +260,7 @@ class _Pordefinir extends State<Pordefinir> {
                               style: TextStyle(
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 color: Colors.white,
                               ),
                             ),

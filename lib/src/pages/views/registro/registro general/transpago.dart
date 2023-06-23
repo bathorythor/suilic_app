@@ -201,9 +201,9 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             children: [
               Text('Correo electronico o nro telefono',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.normal,
                     fontSize: 17,
-                    fontFamily: 'RobotoR',
+                    fontFamily: 'Roboto',
                   )),
             ],
           ),
@@ -216,9 +216,9 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               decoration: InputDecoration(
                 hintText: "Ingresa Correo o nro telefono",
                 hintStyle: const TextStyle(
-                  fontFamily: 'RobotoR',
-                  fontSize: 16.0,
-                ),
+                    fontFamily: 'RobotoR',
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.normal),
                 contentPadding:
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
                 // helperText: 'Ingrese un email valido',
@@ -265,7 +265,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   style: ElevatedButton.styleFrom(
                       textStyle: const TextStyle(
                         fontFamily: 'Roboto',
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.normal,
                         fontSize: 18,
                       ),
                       primary: Color(0xFF0080ff),

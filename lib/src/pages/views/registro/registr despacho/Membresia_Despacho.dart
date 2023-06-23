@@ -27,7 +27,7 @@ class _MembresiaDespacho extends State<MembresiaDespacho> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 200.0,
+          toolbarHeight: 00.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
@@ -169,7 +169,7 @@ class _MembresiaDespacho extends State<MembresiaDespacho> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => BarNavHome()));
+                                  builder: (context) => const BarNavHome()));
                         },
                         child: const Text('Omitir'),
                         style: ElevatedButton.styleFrom(

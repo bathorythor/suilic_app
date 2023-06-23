@@ -29,7 +29,7 @@ class _Regcontrasena extends State<Regcontrasena> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 400.0,
+          toolbarHeight: 0.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
@@ -61,7 +61,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                   children: [
                     Text('Contraseña actual',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.normal,
                           fontFamily: 'Roboto',
                           fontSize: 16,
                         )),
@@ -91,6 +91,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -111,7 +112,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                   children: [
                     Text('Nueva contraseña ',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.normal,
                           fontFamily: 'Roboto',
                           fontSize: 16,
                         )),
@@ -141,6 +142,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -161,7 +163,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                   children: [
                     Text('Confirmar contraseña ',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.normal,
                           fontFamily: 'Roboto',
                           fontSize: 16,
                         )),
@@ -191,6 +193,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -211,7 +214,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                   children: [
                     Text('Ingresa código de verificación ',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.normal,
                           fontFamily: 'Roboto',
                           fontSize: 16,
                         )),
@@ -241,6 +244,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -287,7 +291,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                           textStyle: const TextStyle(
                               fontFamily: 'Roboto',
                               fontSize: 18,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.normal),
                           primary: Color(0xFF0080ff),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15)))),
@@ -344,7 +348,7 @@ class _Regcontrasena extends State<Regcontrasena> {
                               style: TextStyle(
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 color: Colors.white,
                               ),
                             ),

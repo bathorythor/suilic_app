@@ -211,7 +211,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   children: [
                     Text('Titular',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.normal,
                           fontFamily: 'Roboto',
                           fontSize: 17,
                         )),
@@ -240,6 +240,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                       hintStyle: const TextStyle(
                         fontFamily: 'RobotoR',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -264,7 +265,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   children: [
                     Text('Número de tarjeta',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.normal,
                           fontFamily: 'Roboto',
                           fontSize: 16,
                         )),
@@ -293,6 +294,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                       hintStyle: const TextStyle(
                         fontFamily: 'RobotoR',
                         fontSize: 16.0,
+                        fontWeight: FontWeight.normal,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -309,60 +311,56 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.all(2)),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Padding(padding: EdgeInsets.all(5)),
+          Row(
             children: [
               Column(
                 children: [
-                  SizedBox(
-                    child: Text(
-                      '${date.year}/ ${date.month} / ${date.day}',
-                      style: const TextStyle(
-                          color: Color(0xFF0080ff),
-                          fontFamily: 'Roboto',
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        textStyle: const TextStyle(
+                            fontFamily: 'Roboto',
+                            fontSize: 16,
+                            fontWeight: FontWeight.normal),
+                        primary: Color(0xFF0080ff),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15))),
+                    onPressed: () async {
+                      DateTime? newDate = await showDatePicker(
+                        context: context,
+                        initialDate: date,
+                        firstDate: DateTime(1900),
+                        lastDate: DateTime(2100),
+                      );
+                      if (newDate == null) return;
+                      setState(() => date = newDate);
+                    },
+                    child: const SizedBox(
+                      width: 186,
+                      height: 58,
+                      child: Center(
+                        child: Text(
+                          ' fecha de expiración',
+                          style: TextStyle(
+                              fontFamily: 'Roboto',
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal),
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 1,
-              ),
-              Padding(padding: EdgeInsets.all(2)),
-              Center(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      textStyle: const TextStyle(
-                          fontFamily: 'Roboto',
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                      primary: Color(0xFF0080ff),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15))),
-                  onPressed: () async {
-                    DateTime? newDate = await showDatePicker(
-                      context: context,
-                      initialDate: date,
-                      firstDate: DateTime(1900),
-                      lastDate: DateTime(2100),
-                    );
-                    if (newDate == null) return;
-                    setState(() => date = newDate);
-                  },
-                  child: const SizedBox(
-                    width: 280,
-                    height: 58,
-                    child: Center(
-                      child: Text(
-                        'selecciona fecha de expiración',
-                        style: TextStyle(
-                            fontFamily: 'Roboto',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
+              Padding(padding: EdgeInsets.all(5)),
+              Container(
+                child: SizedBox(
+                  child: Text(
+                    '${date.year}/ ${date.month} / ${date.day}',
+                    style: const TextStyle(
+                        color: Color.fromARGB(255, 10, 10, 10),
+                        fontFamily: 'Roboto',
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal),
                   ),
                 ),
               ),
@@ -375,7 +373,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               style: TextStyle(
                   fontFamily: 'Roboto',
                   fontSize: 17,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.normal),
             ),
           ),
           Padding(padding: EdgeInsets.all(2)),
@@ -403,11 +401,12 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   hintStyle: const TextStyle(
                     fontFamily: 'RobotoR',
                     fontSize: 16.0,
+                    fontWeight: FontWeight.normal,
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
                     borderSide:
-                        BorderSide(color: Color(0xFF0080ff), width: 1.8),
+                        const BorderSide(color: Color(0xFF0080ff), width: 1.8),
                   ),
                 ),
                 onSubmitted: (valor) {
@@ -424,7 +423,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 17,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.normal,
               ),
             ),
           ),
@@ -553,7 +552,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                       textStyle: const TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 18,
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.normal),
                       primary: Color(0xFF0080ff),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15))))),

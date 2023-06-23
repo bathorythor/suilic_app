@@ -30,7 +30,7 @@ class _PreRegState extends State<PreReg> {
         child: AppBar(
           elevation: 0.0,
           backgroundColor: Colors.transparent,
-          toolbarHeight: 400.0,
+          toolbarHeight: 00.0,
           centerTitle: true,
           flexibleSpace: Container(
             decoration: BoxDecoration(
@@ -57,7 +57,8 @@ class _PreRegState extends State<PreReg> {
                   titulo,
                   style: const TextStyle(
                     fontSize: 24,
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Robotobol',
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
               ),
@@ -72,7 +73,11 @@ class _PreRegState extends State<PreReg> {
                   children: <Widget>[
                     Text(
                       texto,
-                      style: const TextStyle(fontSize: 18),
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'RobotoLi',
+                        fontWeight: FontWeight.normal,
+                      ),
                       textAlign: TextAlign.center,
                     ), // texto subtitulo
                   ],
@@ -115,12 +120,11 @@ class _PreRegState extends State<PreReg> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(15))),
                             onPressed: () => actualizarContenido(
-                              'assets/imagenes/usergeneral.png',
-                              'Usuario General',
-                              'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno ',
-                            ),
+                                'assets/imagenes/usergeneral.png',
+                                'Usuario General',
+                                'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno '),
                             child: const Text(
-                              'GENERAL',
+                              'SOY CLIENTE',
                               style: TextStyle(
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
@@ -135,7 +139,7 @@ class _PreRegState extends State<PreReg> {
                 ),
               ],
             ),
-            Padding(padding: EdgeInsets.all(5)),
+            Padding(padding: EdgeInsets.all(10)),
             Column(
               children: [
                 SizedBox(
@@ -164,11 +168,11 @@ class _PreRegState extends State<PreReg> {
                               borderRadius: BorderRadius.circular(15))),
                       onPressed: () => actualizarContenido(
                         'assets/imagenes/despachos.png',
-                        'Usuario Despachos',
+                        'Despachos',
                         'you are in need of everything: grey roads, deep glooms, birds that sing even in silence; ',
                       ),
                       child: const Text(
-                        'DESPACHOS',
+                        'SOY UN DESPACHO',
                         style: TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 18,
@@ -180,7 +184,7 @@ class _PreRegState extends State<PreReg> {
                 ),
               ],
             ),
-            Padding(padding: EdgeInsets.all(5)),
+            Padding(padding: EdgeInsets.all(10)),
             Column(
               children: [
                 SizedBox(
@@ -211,17 +215,21 @@ class _PreRegState extends State<PreReg> {
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15))),
                         onPressed: () => actualizarContenido(
-                          'assets/imagenes/servicios.png',
-                          'Usuario Servicios',
-                          'Texto de la opción 3',
-                        ),
-                        child: const Text(
-                          'SERVICIOS',
-                          style: TextStyle(
-                            fontFamily: 'Roboto',
-                            fontSize: 18,
-                            fontWeight: FontWeight.normal,
-                          ),
+                            'assets/imagenes/servicios.png',
+                            'Servicios',
+                            'you are in need of everything: grey roads, deep glooms, birds that sing even in silence'),
+                        child: const Column(
+                          children: [
+                            Padding(padding: EdgeInsets.all(10)),
+                            Text(
+                              'SOY ABOGADO',
+                              style: TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 18,
+                                fontWeight: FontWeight.normal,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -257,7 +265,7 @@ class _PreRegState extends State<PreReg> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 18.0,
-                      fontFamily: 'Roboto',
+                      fontFamily: 'Robotobol',
                       fontWeight: FontWeight.bold,
                     ),
                   ),

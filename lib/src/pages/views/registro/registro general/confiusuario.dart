@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:suilic_app/src/pages/Pre_reg_pag.dart';
+
 import 'package:suilic_app/src/pages/views/home/barra_navegacion_principal.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20general/Membresia_General.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20general/Reg_contrasena.dart';
-import 'package:suilic_app/src/pages/views/registro/registro%20general/Reg_general_Pag.dart';
 
 class Confiusuario extends StatefulWidget {
   const Confiusuario({super.key});

@@ -28,7 +28,7 @@ class _RegDespachosPage extends State<RegDespachosPage> {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          toolbarHeight: 400.0,
+          toolbarHeight: 00.0,
           centerTitle: true,
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
@@ -279,7 +279,7 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                         textStyle: const TextStyle(
                             fontFamily: 'Roboto',
                             fontSize: 18,
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.normal),
                         primary: Color(0xFF0080ff),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15))),
@@ -336,7 +336,7 @@ class _RegDespachosPage extends State<RegDespachosPage> {
                               style: TextStyle(
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 color: Colors.white,
                               ),
                             ),

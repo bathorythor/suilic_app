@@ -309,59 +309,55 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             ],
           ),
           Padding(padding: EdgeInsets.all(2)),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Row(
             children: [
               Column(
                 children: [
-                  SizedBox(
-                    child: Text(
-                      '${date.year}/ ${date.month} / ${date.day}',
-                      style: const TextStyle(
-                          color: Color(0xFF0080ff),
-                          fontFamily: 'Roboto',
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        textStyle: const TextStyle(
+                            fontFamily: 'Roboto',
+                            fontSize: 16,
+                            fontWeight: FontWeight.normal),
+                        primary: Color(0xFF0080ff),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15))),
+                    onPressed: () async {
+                      DateTime? newDate = await showDatePicker(
+                        context: context,
+                        initialDate: date,
+                        firstDate: DateTime(1900),
+                        lastDate: DateTime(2100),
+                      );
+                      if (newDate == null) return;
+                      setState(() => date = newDate);
+                    },
+                    child: const SizedBox(
+                      width: 186,
+                      height: 58,
+                      child: Center(
+                        child: Text(
+                          ' fecha de expiración',
+                          style: TextStyle(
+                              fontFamily: 'Roboto',
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal),
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 1,
-              ),
-              Padding(padding: EdgeInsets.all(2)),
-              Center(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      textStyle: const TextStyle(
-                          fontFamily: 'Roboto',
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                      primary: Color(0xFF0080ff),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15))),
-                  onPressed: () async {
-                    DateTime? newDate = await showDatePicker(
-                      context: context,
-                      initialDate: date,
-                      firstDate: DateTime(1900),
-                      lastDate: DateTime(2100),
-                    );
-                    if (newDate == null) return;
-                    setState(() => date = newDate);
-                  },
-                  child: const SizedBox(
-                    width: 280,
-                    height: 58,
-                    child: Center(
-                      child: Text(
-                        'selecciona fecha de expiración',
-                        style: TextStyle(
-                            fontFamily: 'Roboto',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
+              Padding(padding: EdgeInsets.all(5)),
+              Container(
+                child: SizedBox(
+                  child: Text(
+                    '${date.year}/ ${date.month} / ${date.day}',
+                    style: const TextStyle(
+                        color: Color.fromARGB(255, 10, 10, 10),
+                        fontFamily: 'Roboto',
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal),
                   ),
                 ),
               ),

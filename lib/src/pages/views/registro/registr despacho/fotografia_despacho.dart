@@ -27,7 +27,7 @@ class _FotografiaDespacho extends State<FotografiaDespacho> {
           child: AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0.0,
-            toolbarHeight: 400.0,
+            toolbarHeight: 00.0,
             centerTitle: true,
             flexibleSpace: ClipRRect(
               borderRadius: const BorderRadius.only(
@@ -94,7 +94,8 @@ class _FotografiaDespacho extends State<FotografiaDespacho> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => DocumenDespacho()));
+                                    builder: (context) =>
+                                        const DocumenDespacho()));
                           },
                           child: const Text('Cancelar'),
                           style: ElevatedButton.styleFrom(
