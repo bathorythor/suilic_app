@@ -98,7 +98,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -118,7 +118,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -238,7 +238,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                     decoration: InputDecoration(
                       hintText: "Nombre del titular",
                       hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'RobotoR',
                         fontSize: 16.0,
                       ),
                       enabledBorder: OutlineInputBorder(
@@ -287,11 +287,11 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   width: 380,
                   height: 58,
                   child: TextField(
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                     decoration: InputDecoration(
                       hintText: "Número de tarjeta ",
                       hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'RobotoR',
                         fontSize: 16.0,
                       ),
                       enabledBorder: OutlineInputBorder(
@@ -401,7 +401,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                 decoration: InputDecoration(
                   hintText: "Numero de pin",
                   hintStyle: const TextStyle(
-                    fontFamily: 'Roboto',
+                    fontFamily: 'RobotoR',
                     fontSize: 16.0,
                   ),
                   enabledBorder: OutlineInputBorder(
@@ -460,7 +460,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                         child: Text(
                           'Ext',
                           style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontSize: 16,
                               fontWeight: FontWeight.normal),
                         ),
@@ -519,7 +519,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                       decoration: InputDecoration(
                         hintText: " Número de Telefono",
                         hintStyle: const TextStyle(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'RobotoR',
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,
                         ),

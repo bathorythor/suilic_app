@@ -110,9 +110,9 @@ class _DocumenDespacho extends State<DocumenDespacho> {
                               child: Text('Tomar foto frontal '),
                               style: ElevatedButton.styleFrom(
                                   textStyle: const TextStyle(
-                                      fontFamily: 'Roboto',
+                                      fontFamily: 'RobotoR',
                                       fontSize: 14,
-                                      fontWeight: FontWeight.bold),
+                                      fontWeight: FontWeight.normal),
                                   primary: Color(0xFF000000),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20))),
@@ -184,9 +184,9 @@ class _DocumenDespacho extends State<DocumenDespacho> {
                               child: Text('Tomar foto revés '),
                               style: ElevatedButton.styleFrom(
                                   textStyle: const TextStyle(
-                                      fontFamily: 'Roboto',
+                                      fontFamily: 'RobotoR',
                                       fontSize: 14,
-                                      fontWeight: FontWeight.bold),
+                                      fontWeight: FontWeight.normal),
                                   primary: Color(0xFF000000),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20))),

@@ -107,9 +107,9 @@ class _PreRegState extends State<PreReg> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 textStyle: const TextStyle(
-                                  fontFamily: 'Roboto',
+                                  fontFamily: 'RobotoLi',
                                   fontSize: 18,
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                 ),
                                 primary: Color(0xFF0080ff),
                                 shape: RoundedRectangleBorder(
@@ -120,11 +120,11 @@ class _PreRegState extends State<PreReg> {
                               'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno ',
                             ),
                             child: const Text(
-                              'General',
+                              'GENERAL',
                               style: TextStyle(
                                 fontFamily: 'Roboto',
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                               ),
                             ),
                           ),
@@ -155,9 +155,9 @@ class _PreRegState extends State<PreReg> {
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           textStyle: const TextStyle(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoLi',
                             fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.normal,
                           ),
                           primary: Color(0xFF0080ff),
                           shape: RoundedRectangleBorder(
@@ -168,11 +168,11 @@ class _PreRegState extends State<PreReg> {
                         'you are in need of everything: grey roads, deep glooms, birds that sing even in silence; ',
                       ),
                       child: const Text(
-                        'Despachos',
+                        'DESPACHOS',
                         style: TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.normal,
                         ),
                       ),
                     ),
@@ -203,9 +203,9 @@ class _PreRegState extends State<PreReg> {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             textStyle: const TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoLi',
                               fontSize: 18,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.normal,
                             ),
                             primary: Color(0xFF0080ff),
                             shape: RoundedRectangleBorder(
@@ -216,11 +216,11 @@ class _PreRegState extends State<PreReg> {
                           'Texto de la opción 3',
                         ),
                         child: const Text(
-                          'Servicios',
+                          'SERVICIOS',
                           style: TextStyle(
                             fontFamily: 'Roboto',
                             fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.normal,
                           ),
                         ),
                       ),
@@ -253,11 +253,13 @@ class _PreRegState extends State<PreReg> {
                 },
                 child: const Center(
                   child: Text(
-                    'Siguente',
+                    'SIGUIENTE',
                     style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18.0,
-                        fontFamily: 'AlfaSlabOne'),
+                      color: Colors.black,
+                      fontSize: 18.0,
+                      fontFamily: 'Roboto',
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),

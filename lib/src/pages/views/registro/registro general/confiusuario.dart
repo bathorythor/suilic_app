@@ -103,10 +103,16 @@ class _Confiusuario extends State<Confiusuario> {
                         ),
                       ),
                       hintText: "Documentos",
-                      hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 16.0,
+                      suffixIcon: const Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: ImageIcon(
+                          AssetImage(
+                              'assets/imagenes/iconos/iconflechaderecha.png'),
+                          color: Color(0xFF161C38),
+                        ),
                       ),
+                      hintStyle: const TextStyle(
+                          fontFamily: 'RobotoR', fontSize: 16.0),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide:
@@ -129,7 +135,7 @@ class _Confiusuario extends State<Confiusuario> {
                       children: [
                         Text('Seguridad ',
                             style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontWeight: FontWeight.bold,
                               fontSize: 17,
                             )),
@@ -165,8 +171,16 @@ class _Confiusuario extends State<Confiusuario> {
                         ),
                       ),
                       hintText: "Seguridad",
+                      suffixIcon: const Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: ImageIcon(
+                          AssetImage(
+                              'assets/imagenes/iconos/iconflechaderecha.png'),
+                          color: Color(0xFF161C38),
+                        ),
+                      ),
                       hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'RobotoR',
                         fontSize: 16.0,
                       ),
                       enabledBorder: OutlineInputBorder(
@@ -191,7 +205,7 @@ class _Confiusuario extends State<Confiusuario> {
                       children: [
                         Text('Foto de perfil  ',
                             style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontWeight: FontWeight.bold,
                               fontSize: 17,
                             )),
@@ -226,8 +240,16 @@ class _Confiusuario extends State<Confiusuario> {
                         ),
                       ),
                       hintText: "Cambio de foto",
+                      suffixIcon: const Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: ImageIcon(
+                          AssetImage(
+                              'assets/imagenes/iconos/iconflechaderecha.png'),
+                          color: Color(0xFF161C38),
+                        ),
+                      ),
                       hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'RobotoR',
                         fontSize: 16.0,
                       ),
                       enabledBorder: OutlineInputBorder(
@@ -252,7 +274,7 @@ class _Confiusuario extends State<Confiusuario> {
                       children: [
                         Text('Membresia ',
                             style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontWeight: FontWeight.bold,
                               fontSize: 17,
                             )),
@@ -287,8 +309,16 @@ class _Confiusuario extends State<Confiusuario> {
                         ),
                       ),
                       hintText: "Tarjeta",
+                      suffixIcon: const Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: ImageIcon(
+                          AssetImage(
+                              'assets/imagenes/iconos/iconflechaderecha.png'),
+                          color: Color(0xFF161C38),
+                        ),
+                      ),
                       hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'RobotoR',
                         fontSize: 16.0,
                       ),
                       enabledBorder: OutlineInputBorder(
@@ -313,7 +343,7 @@ class _Confiusuario extends State<Confiusuario> {
                       children: [
                         Text('Notifications ',
                             style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontWeight: FontWeight.bold,
                               fontSize: 17,
                             )),
@@ -349,8 +379,16 @@ class _Confiusuario extends State<Confiusuario> {
                         ),
                       ),
                       hintText: "Notificaciones",
+                      suffixIcon: const Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: ImageIcon(
+                          AssetImage(
+                              'assets/imagenes/iconos/iconflechaderecha.png'),
+                          color: Color(0xFF161C38),
+                        ),
+                      ),
                       hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'RobotoR',
                         fontSize: 16.0,
                       ),
                       enabledBorder: OutlineInputBorder(
@@ -375,7 +413,7 @@ class _Confiusuario extends State<Confiusuario> {
                       children: [
                         Text('Cerrar ',
                             style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontWeight: FontWeight.bold,
                               fontSize: 17,
                             )),
@@ -413,8 +451,16 @@ class _Confiusuario extends State<Confiusuario> {
                         ),
                       ),
                       hintText: "Cerrar cuenta",
+                      suffixIcon: const Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: ImageIcon(
+                          AssetImage(
+                              'assets/imagenes/iconos/iconflechaderecha.png'),
+                          color: Color(0xFF161C38),
+                        ),
+                      ),
                       hintStyle: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'RobotoR',
                         fontSize: 16.0,
                       ),
                       enabledBorder: OutlineInputBorder(

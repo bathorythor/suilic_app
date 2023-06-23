@@ -93,7 +93,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -113,7 +113,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 16,
-                            fontFamily: 'Roboto',
+                            fontFamily: 'RobotoR',
                           ),
                         ),
                       ),
@@ -203,7 +203,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 17,
-                    fontFamily: 'Roboto',
+                    fontFamily: 'RobotoR',
                   )),
             ],
           ),
@@ -212,11 +212,15 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             width: 380,
             height: 58,
             child: TextField(
+              textAlign: TextAlign.left,
               decoration: InputDecoration(
-                hintText: "Ingresa tu correo",
-
+                hintText: "Ingresa Correo o nro telefono",
+                hintStyle: const TextStyle(
+                  fontFamily: 'RobotoR',
+                  fontSize: 16.0,
+                ),
                 contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 1, vertical: 2),
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
                 // helperText: 'Ingrese un email valido',
                 // suffixIcon: const Icon(
                 //   Icons.card_membership_sharp,

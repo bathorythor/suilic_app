@@ -115,7 +115,7 @@ class _Pordefinir extends State<Pordefinir> {
                       children: [
                         Text('Ingresa tu email ',
                             style: TextStyle(
-                              fontFamily: 'Roboto',
+                              fontFamily: 'RobotoR',
                               fontWeight: FontWeight.bold,
                               fontSize: 17,
                             )),
