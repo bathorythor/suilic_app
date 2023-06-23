@@ -16,94 +16,142 @@ class _InicioLoginPag extends State<InicioLoginPag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(495),
+        child: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0.0,
+          toolbarHeight: 00.0,
+          centerTitle: true,
+          flexibleSpace: ClipRRect(
+            borderRadius: const BorderRadius.only(
+              bottomRight: Radius.circular(20),
+              bottomLeft: Radius.circular(20),
+            ),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Colors.white,
+                  image: DecorationImage(
+                    image: AssetImage('assets/imagenes/inicio_login.png'),
+                    fit: BoxFit.fill,
+                  )),
+            ),
+          ),
+        ),
+      ),
       //backgroundColor: Color(0xFFFFFFFF),
       body: ListView(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 30.0,
+          vertical: 40.0,
+        ),
         children: <Widget>[
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30.0),
-                ),
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.vertical(
-                      top: Radius.zero, bottom: Radius.circular(20.0)),
-                  child: Image.asset(
-                    'assets/imagenes/inicio_login.png',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const Divider(
-                height: 18.0,
-              ),
-              Padding(padding: EdgeInsets.all(5.0)),
+              // Container(
+              //   width: double.infinity,
+              //   decoration: BoxDecoration(
+              //     borderRadius: BorderRadius.circular(30.0),
+              //   ),
+              //   child: ClipRRect(
+              //     borderRadius: const BorderRadius.vertical(
+              //         top: Radius.zero, bottom: Radius.circular(20.0)),
+              //     child: Image.asset(
+              //       'assets/imagenes/inicio_login.png',
+              //       fit: BoxFit.cover,
+              //     ),
+              //   ),
+              // ),
+              // const Divider(
+              //   height: 18.0,
+              // ),
+              // Padding(padding: EdgeInsets.all(5.0)),
               Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    const SizedBox(height: 30),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(300, 50),
-                        shape: ContinuousRectangleBorder(
-                            side: BorderSide.none,
-                            borderRadius: BorderRadius.circular(20.0)),
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 10.0, horizontal: 20.0),
-                        textStyle: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                          //height: 20.0,
+                    // const SizedBox(height: 30),
+                    SizedBox(
+                      width: 380,
+                      height: 58,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color.fromARGB(130, 211, 210, 210),
+                                spreadRadius: 0.01,
+                                blurRadius: 5,
+                                offset: Offset(1.5, 1.5),
+                              )
+                            ]),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'loginPage');
+                          },
+                          style: ElevatedButton.styleFrom(
+                              textStyle: const TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 18,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              primary: Color(0xFF0080ff),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15))),
+                          child: const Center(child: Text('Ingresar')),
                         ),
-                        backgroundColor: Color(0xFF0080ff),
                       ),
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'loginPage');
-                      },
-                      child: const Text('Ingresar'),
                     ),
                     const Padding(padding: EdgeInsets.all(10.0)),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(300, 50),
-                        shape: ContinuousRectangleBorder(
-                            side: BorderSide.none,
-                            borderRadius: BorderRadius.circular(20.0)),
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 10.0, horizontal: 20.0),
-                        textStyle: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                          //height: 20.0,
+                    SizedBox(
+                      width: 380,
+                      height: 58,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color.fromARGB(130, 211, 210, 210),
+                                spreadRadius: 0.01,
+                                blurRadius: 5,
+                                offset: Offset(1.5, 1.5),
+                              )
+                            ]),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'preRegistroPage');
+                          },
+                          style: ElevatedButton.styleFrom(
+                              textStyle: const TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 18,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              primary: Color(0xFF0080ff),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15))),
+                          child: const Center(child: Text('Crear Cuenta')),
                         ),
-                        backgroundColor: Color(0xFF0080ff),
                       ),
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'preRegistroPage');
-                      },
-                      child: const Text('Crerar Cuenta'),
                     ),
-                    const Padding(padding: EdgeInsets.all(10.0)),
                   ],
                 ),
               ),
-              const Divider(
-                height: 18.0,
-              ),
+              Padding(padding: EdgeInsets.all(5)),
               TextButton(
                 style: TextButton.styleFrom(
                   foregroundColor: Colors.lightBlue, // foreground
                 ),
                 onPressed: () => null,
                 child: const Text(
-                  '¿ Olvido su contraseña?',
+                  'Olvido su contraseña?',
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 10.0,
-                      fontFamily: 'AlfaSlabOne'),
+                    color: Colors.black,
+                    fontSize: 15.0,
+                    fontFamily: 'RobotoR',
+                    fontWeight: FontWeight.normal,
+                  ),
                 ),
               ),
               SizedBox(
@@ -117,11 +165,13 @@ class _InicioLoginPag extends State<InicioLoginPag> {
                       //     MaterialPageRoute(builder: (context) => PreReg()));
                     },
                     child: const Text(
-                      'haga clic y recuperela',
+                      'haga click aquí para recuperela',
                       style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 15.0,
-                          fontFamily: 'AlfaSlabOne'),
+                        color: Colors.blue,
+                        fontSize: 17.0,
+                        fontFamily: 'RobotoR',
+                        fontWeight: FontWeight.normal,
+                      ),
                     ),
                   )),
             ],

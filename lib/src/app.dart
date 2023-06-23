@@ -29,7 +29,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         //theme: AppTheme(selectedColor: 4).theme(),
         // initialRoute: '/',
-        initialRoute: 'preRegistroPage',
+        //initialRoute: 'preRegistroPage',
+        initialRoute: 'InicioLoginPag',
         //initialRoute: 'profileUserServiciosPag',
         //initialRoute: 'profileUserGeneralPag',
         //initialRoute: 'profileUserDespachosPag',
@@ -51,6 +52,7 @@ class MyApp extends StatelessWidget {
           'editProfileUserGeneralPag': (context) => EditProfileUserGeneralPag(),
 
           /////////////////////////////////////////////////////////////
+          'inicioLoginPag': (context) => InicioLoginPag(),
           'preRegistroPage': (context) => PreReg(),
           'loginPage': (context) => LoginPage(),
           'homePage': (context) => HomePage(),
