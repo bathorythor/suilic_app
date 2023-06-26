@@ -79,6 +79,7 @@ class _RegserviciosPage extends State<RegserviciosPage> {
                   child: TextField(
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintText: "Ingresa tu número teléfono",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
@@ -120,6 +121,7 @@ class _RegserviciosPage extends State<RegserviciosPage> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintText: "Establece tu contraseña",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
@@ -159,6 +161,7 @@ class _RegserviciosPage extends State<RegserviciosPage> {
                   child: TextField(
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintText: "Ingresa tu número de usuario",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
@@ -198,6 +201,7 @@ class _RegserviciosPage extends State<RegserviciosPage> {
                   child: TextField(
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintText: "Ingresa tu edad",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
@@ -237,6 +241,7 @@ class _RegserviciosPage extends State<RegserviciosPage> {
                   child: TextField(
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintText: "Código de verificación",
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',

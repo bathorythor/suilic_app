@@ -146,6 +146,7 @@ class _Confdespacho extends State<Confdespacho> {
                   child: TextField(
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       prefixIcon: const Padding(
                         padding: EdgeInsets.all(5.0),
                         child: ImageIcon(

@@ -85,6 +85,7 @@ class _Contrasenaservicios extends State<Contrasenaservicios> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -136,6 +137,7 @@ class _Contrasenaservicios extends State<Contrasenaservicios> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -187,6 +189,7 @@ class _Contrasenaservicios extends State<Contrasenaservicios> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -238,6 +241,7 @@ class _Contrasenaservicios extends State<Contrasenaservicios> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,

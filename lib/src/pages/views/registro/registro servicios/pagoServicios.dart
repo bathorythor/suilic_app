@@ -29,11 +29,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
   DateTime date = DateTime(2023, 12, 31);
 
   Groceries? _groceryItem = Groceries.pickles;
-  String _titular = "";
-  String _numerotarjeta = "";
-  String _fecha = '';
-  String _pin = '';
-  String _domicilio = '';
+  String _correo3 = "";
 
   @override
   Widget build(BuildContext context) {
@@ -208,32 +204,48 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             ],
           ),
           Padding(padding: EdgeInsets.all(5)),
-          SizedBox(
-            width: 380,
-            height: 58,
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: "Ingresa tu correo",
-                hintStyle: const TextStyle(
-                    fontFamily: 'RobotoR',
+          Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: Colors.white,
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color.fromARGB(130, 221, 221, 221),
+                    spreadRadius: 0.01,
+                    blurRadius: 1,
+                    offset: Offset(0, 2),
+                  ),
+                ]),
+            child: SizedBox(
+              width: 380,
+              height: 58,
+              child: TextField(
+                textAlign: TextAlign.left,
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  // prefixIcon: const Padding(
+                  //   padding: EdgeInsets.all(5.0),
+                  //   child: ImageIcon(
+                  //     AssetImage('assets/imagenes/iconos/iconarroba.png'),
+                  //     color: Color(0xFF0080ff),
+                  //   ),
+                  // ),
+                  hintText: "Ingresa tu correo",
+                  hintStyle: const TextStyle(
+                    fontFamily: 'Roboto',
                     fontSize: 16.0,
-                    fontWeight: FontWeight.normal),
-
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
-                // helperText: 'Ingrese un email valido',
-                // suffixIcon: const Icon(
-                //   Icons.card_membership_sharp,
-                // ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  borderSide: const BorderSide(color: Colors.blue, width: 1.8),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide:
+                        BorderSide(color: Color(0xFF0080ff), width: 1.8),
+                  ),
                 ),
+                onSubmitted: (valor) {
+                  _correo3 = valor;
+                  print('El nombre es: $_correo3');
+                },
               ),
-              onSubmitted: (valor) {
-                String _titular = valor;
-                print('El nombre es: $_titular');
-              },
             ),
           ),
           const Padding(padding: EdgeInsets.all(5)),

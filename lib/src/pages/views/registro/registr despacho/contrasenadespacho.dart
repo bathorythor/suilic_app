@@ -88,6 +88,7 @@ class _Contrasenadespacho extends State<Contrasenadespacho> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -139,6 +140,7 @@ class _Contrasenadespacho extends State<Contrasenadespacho> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -190,6 +192,7 @@ class _Contrasenadespacho extends State<Contrasenadespacho> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -241,6 +244,7 @@ class _Contrasenadespacho extends State<Contrasenadespacho> {
                     obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,

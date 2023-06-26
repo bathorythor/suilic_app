@@ -236,7 +236,13 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   child: TextField(
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
+                      // contentPadding: EdgeInsets.symmetric(
+                      //   horizontal: 10,
+                      // ),
+
                       hintText: "Nombre del titular",
+
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'RobotoR',
                         fontSize: 16.0,
@@ -252,6 +258,10 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                       _titular = valor;
                       print('El nombre es: $_titular');
                     },
+                    scrollPadding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 2,
+                    ),
                   ),
                 ),
               ),
@@ -291,6 +301,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
                       hintText: "Número de tarjeta ",
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'RobotoR',
                         fontSize: 16.0,
@@ -397,6 +408,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                 obscureText: true,
                 textAlign: TextAlign.left,
                 decoration: InputDecoration(
+                  border: InputBorder.none,
                   hintText: "Numero de pin",
                   hintStyle: const TextStyle(
                     fontFamily: 'RobotoR',
@@ -432,8 +444,8 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             children: [
               Center(
                   child: SizedBox(
-                height: 58,
                 child: Container(
+                  // margin: const EdgeInsets.all(16),
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12.0),
@@ -450,46 +462,48 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           offset: Offset(0, 2),
                         ),
                       ]),
-                  child: DropdownButton<String>(
-                    value: dropdownValue,
-                    icon: const Icon(Icons.arrow_drop_down),
-                    items: const [
-                      DropdownMenuItem<String>(
-                        value: 'Ext',
-                        child: Text(
-                          'Ext',
-                          style: TextStyle(
-                              fontFamily: 'RobotoR',
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal),
+                  child: DropdownButtonHideUnderline(
+                    child: DropdownButton<String>(
+                      value: dropdownValue,
+                      icon: const Icon(Icons.arrow_drop_down),
+                      items: const [
+                        DropdownMenuItem<String>(
+                          value: 'Ext',
+                          child: Text(
+                            'Ext',
+                            style: TextStyle(
+                                fontFamily: 'RobotoR',
+                                fontSize: 16,
+                                fontWeight: FontWeight.normal),
+                          ),
                         ),
-                      ),
-                      DropdownMenuItem<String>(
-                          value: '+51', child: Text('+51')),
-                      DropdownMenuItem<String>(
-                          value: '+52', child: Text('+52')),
-                      DropdownMenuItem<String>(
-                          value: '+53', child: Text('+53')),
-                      DropdownMenuItem<String>(
-                          value: '+54', child: Text('+54')),
-                      DropdownMenuItem<String>(
-                          value: '+55', child: Text('+55')),
-                      DropdownMenuItem<String>(
-                          value: '+56', child: Text('+56')),
-                      DropdownMenuItem<String>(
-                          value: '+57', child: Text('+57')),
-                      DropdownMenuItem<String>(
-                          value: '+58', child: Text('+58')),
-                      DropdownMenuItem<String>(
-                          value: '+59', child: Text('+59')),
-                      DropdownMenuItem<String>(
-                          value: '+60', child: Text('+60')),
-                    ],
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        dropdownValue = newValue!;
-                      });
-                    },
+                        DropdownMenuItem<String>(
+                            value: '+51', child: Text('+51')),
+                        DropdownMenuItem<String>(
+                            value: '+52', child: Text('+52')),
+                        DropdownMenuItem<String>(
+                            value: '+53', child: Text('+53')),
+                        DropdownMenuItem<String>(
+                            value: '+54', child: Text('+54')),
+                        DropdownMenuItem<String>(
+                            value: '+55', child: Text('+55')),
+                        DropdownMenuItem<String>(
+                            value: '+56', child: Text('+56')),
+                        DropdownMenuItem<String>(
+                            value: '+57', child: Text('+57')),
+                        DropdownMenuItem<String>(
+                            value: '+58', child: Text('+58')),
+                        DropdownMenuItem<String>(
+                            value: '+59', child: Text('+59')),
+                        DropdownMenuItem<String>(
+                            value: '+60', child: Text('+60')),
+                      ],
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          dropdownValue = newValue!;
+                        });
+                      },
+                    ),
                   ),
                 ),
               )),
@@ -516,6 +530,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                     height: 58,
                     child: TextField(
                       decoration: InputDecoration(
+                        border: InputBorder.none,
                         hintText: " Número de Telefono",
                         hintStyle: const TextStyle(
                           fontFamily: 'RobotoR',

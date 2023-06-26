@@ -79,6 +79,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       hintText: "Ingresa tu número teléfono",
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -119,6 +120,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       hintText: "Establece tu contraseña",
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -157,6 +159,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       hintText: "Ingresa tu número de usuario",
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -196,6 +199,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       hintText: "Ingresa tu edad",
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
@@ -235,6 +239,7 @@ class _RegGeralPage extends State<RegGeralPage> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       hintText: "Código de verificación",
+                      border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16.0,
