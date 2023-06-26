@@ -511,7 +511,8 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           dropdownValue = newValue!;
                         });
                       },
-                      borderRadius: BorderRadius.circular(25),
+                      borderRadius: BorderRadius.circular(10),
+                      menuMaxHeight: 58,
                     ),
                   ),
                 ),
