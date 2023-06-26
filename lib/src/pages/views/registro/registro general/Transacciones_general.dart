@@ -236,12 +236,11 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   child: TextField(
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
-                      // contentPadding: EdgeInsets.symmetric(
-                      //   horizontal: 10,
-                      // ),
-
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 25,
+                      ),
                       hintText: "Nombre del titular",
-
                       border: InputBorder.none,
                       hintStyle: const TextStyle(
                         fontFamily: 'RobotoR',
@@ -300,6 +299,10 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                   child: TextField(
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 25,
+                      ),
                       hintText: "Número de tarjeta ",
                       border: InputBorder.none,
                       hintStyle: const TextStyle(
@@ -408,6 +411,10 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                 obscureText: true,
                 textAlign: TextAlign.left,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 25,
+                  ),
                   border: InputBorder.none,
                   hintText: "Numero de pin",
                   hintStyle: const TextStyle(
@@ -444,11 +451,12 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
             children: [
               Center(
                   child: SizedBox(
+                height: 58,
                 child: Container(
                   // margin: const EdgeInsets.all(16),
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12.0),
+                      borderRadius: BorderRadius.circular(10.0),
                       color: Colors.white,
                       border: Border.all(
                           color: Color(0xFF0080ff),
@@ -459,7 +467,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           color: Color.fromARGB(130, 221, 221, 221),
                           spreadRadius: 0.01,
                           blurRadius: 1,
-                          offset: Offset(0, 2),
+                          offset: Offset(0, 1),
                         ),
                       ]),
                   child: DropdownButtonHideUnderline(
@@ -503,6 +511,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                           dropdownValue = newValue!;
                         });
                       },
+                      borderRadius: BorderRadius.circular(25),
                     ),
                   ),
                 ),
@@ -530,6 +539,10 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                     height: 58,
                     child: TextField(
                       decoration: InputDecoration(
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 25,
+                        ),
                         border: InputBorder.none,
                         hintText: " Número de Telefono",
                         hintStyle: const TextStyle(

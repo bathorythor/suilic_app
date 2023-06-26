@@ -222,6 +222,10 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
               child: TextField(
                 textAlign: TextAlign.left,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 25,
+                  ),
                   border: InputBorder.none,
                   // prefixIcon: const Padding(
                   //   padding: EdgeInsets.all(5.0),
