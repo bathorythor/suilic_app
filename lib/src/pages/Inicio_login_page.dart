@@ -111,7 +111,7 @@ class _InicioLoginPag extends State<InicioLoginPag> {
                               primary: Color(0xFF0080ff),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15))),
-                          child: const Center(child: Text('Crear Cuenta')),
+                          child: const Center(child: Text('Crear cuenta')),
                         ),
                       ),
                     ),
