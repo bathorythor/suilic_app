@@ -507,7 +507,7 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
                         });
                       },
                       borderRadius: BorderRadius.circular(10),
-                      menuMaxHeight: 58,
+                      menuMaxHeight: 100,
                     ),
                   ),
                 ),
